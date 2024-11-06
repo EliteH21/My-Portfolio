@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humzah's Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to external CSS file in the public folder -->
+</head>
+<body>
+    <!-- Include the header partial for navigation -->
+    <% include ('partials/header') %>
+
+    <!-- Hero Section with Centered Text -->
+    <section class="hero-section" style="text-align: center;">
+        <img src="/images/OTU1.jpg" alt="Ontario Tech University" class="hero-image" style="width: 600px;">
+        <div class="hero-text">
+            <h1>Welcome to My Personal Portfolio</h1>
+            <p>Hi, I'm Humzah Imam. This website gives you an overview of my academic journey, fitness transformation, key skills, and more. Explore the sections below to learn more about me!</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section">
+        <h2>About Me</h2>
+        <p>I’m currently pursuing a degree in Technology Management at Ontario Tech University. I’m passionate about combining technology with business strategy to create meaningful solutions. In addition to my academic pursuits, I’m also dedicated to fitness, working towards achieving my personal goals in health and wellness.</p>
+    </section>
+
+    <!-- Quick Overview of Other Pages (Centered) -->
+    <section class="links-section" style="text-align: center;">
+        <h2>Explore My Pages</h2>
+        <div class="links-container" style="display: inline-block; text-align: left;">
+            <!-- Fitness Journey Description -->
+            <a href="/about" style="text-decoration: none;">
+                <div class="link-box" style="border: 2px solid #ff5722; padding: 10px; border-radius: 8px; width: 250px; margin-bottom: 20px;">
+                    <h3>My Fitness Journey</h3>
+                    <p>Discover how I stay committed to my fitness goals and watch videos of my transformation.</p>
+                </div>
+            </a>
+
+            <!-- Skills Description -->
+            <a href="/skills" style="text-decoration: none;">
+                <div class="link-box" style="border: 2px solid #ff5722; padding: 10px; border-radius: 8px; width: 250px; margin-bottom: 20px;">
+                    <h3>Skills</h3>
+                    <p>Take a look at the key skills I’ve developed throughout my academic and professional experiences.</p>
+                </div>
+            </a>
+
+            <!-- Contact Page Description (Extra Margin Added) -->
+            <a href="/contact" style="text-decoration: none;">
+                <div class="link-box" style="border: 2px solid #ff5722; padding: 10px; border-radius: 8px; width: 250px; margin-bottom: 40px;"> <!-- Added margin-bottom: 40px -->
+                    <h3>Contact</h3>
+                    <p>Feel free to reach out for any questions, feedback, or inquiries. Let’s get in touch!</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Include the footer partial -->
+    <% include ('partials/footer') %>
+</body>
+</html>

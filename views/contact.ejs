@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Humzah Imam</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Include the header partial for navigation -->
+    <% include('partials/header') %>
+
+    <!-- Contact Section -->
+    <main>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <p>If you'd like to reach out for any feedback, comments, or questions, please use the form below.</p>
+            
+            <!-- Contact Form -->
+            <form action="#" method="post"> <!-- Form action can be linked to backend later -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="40" required></textarea><br><br>
+
+                <input type="checkbox" id="mathCheck" name="mathCheck" required>
+                <label for="mathCheck">2 + 2 = 4. Check box for 'Yes'.</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Include the footer partial -->
+    <% include('partials/footer') %>
+
+</body>
+</html>

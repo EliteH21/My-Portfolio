@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness Journey - Humzah Imam</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to external CSS file in the public folder -->
+</head>
+<body>
+    <!-- Include the header partial for navigation -->
+    <% include('partials/header') %>
+
+    <!-- Fitness Journey Section -->
+    <main>
+        <section class="about-section">
+            <h1>My Fitness Journey</h1>
+            <p>Welcome to my fitness journey! Here, you will find a collection of videos showcasing my transformation, workouts, and motivational content. Fitness is not just a hobby for me—it's a lifestyle that I’m continuously dedicated to.</p>
+        </section>
+
+        <!-- Profile Photo (Kept Same) -->
+        <section class="media-section" style="text-align: center; margin-bottom: 20px;">
+            <div class="profile-photo">
+                <img src="/images/HumzahPhoto1.jpg" alt="Humzah Imam" width="400px">
+            </div>
+        </section>
+
+        <!-- Fitness Videos Section (All Videos Same Size) -->
+        <section class="media-section" style="display: flex; justify-content: center; gap: 20px;">
+            <div class="fitness-videos">
+                <video width="400px" height="500px" controls>
+                    <source src="/videos/TransformationVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video width="400px" height="500px" controls>
+                    <source src="/videos/MotivationalFitnessVideo1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video width="400px" height="500px" controls>
+                    <source src="/videos/MotivationalFitnessVideo2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include the footer partial -->
+    <% include('partials/footer') %>
+</body>
+</html>
